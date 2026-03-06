@@ -1,0 +1,74 @@
+.box {
+    background-color: thistle;
+    border: 1px solid black;
+    padding: 350px;
+    margin-top: 40px;
+    margin-right: 700px;
+    margin-left: 120px;
+    margin-bottom: 40px;
+}
+.text {
+    position: absolute;
+    top: 70px;
+    left: 60px;
+
+}
+.font {
+    font-family: 'Times New Roman', serif;
+    font-size: 90px;
+    font-weight: bold;
+    position: absolute;
+    top: 70px;
+    left: 60px;
+}
+.redball {
+    background-color: red;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 150px;
+    left: 840px;
+    z-index: 1;
+}
+.boxox {
+    border: 1px solid black;
+    width: 420px;
+    height: 300px;
+    position: absolute;
+    top: 170px;
+    left: 600px;
+    z-index: 0;
+}
+.greenball {
+    background-color: green;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 100px;
+    left: 320px;
+}
+img {
+    position: absolute;
+    border-radius: 50%;
+    width: 130px;
+    height: 130px;
+    top: 380px;
+    left: 920px;
+    z-index: 1;
+}
+.boxoxox {
+    background-color: lightblue;
+    width: 90px;
+    height: 30px;
+    position: absolute;
+    top: 120px;
+    left: 85px;
+}
+.hello {
+    font-size: 20px;
+    position: absolute;
+    top: -15px;
+    left: 15px;
+}
