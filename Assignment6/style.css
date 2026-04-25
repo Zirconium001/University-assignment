@@ -1,0 +1,186 @@
+body {
+  background-color: black;
+}
+
+.container {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 50px auto;
+}
+
+.sun,
+.planet1,
+.planet2,
+.planet3,
+.planet4,
+.planet5,
+.planet6,
+.planet7,
+.planet8 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  overflow: hidden;
+  transform: translate(-50%, -50%);
+}
+
+.sun,
+.planet1,
+.planet2,
+.planet3,
+.planet4,
+.planet5,
+.planet6,
+.planet7,
+.planet8,
+.sun img,
+.planet1 img,
+.planet2 img,
+.planet3 img,
+.planet4 img,
+.planet5 img,
+.planet6 img,
+.planet7 img,
+.planet8 img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.sun {
+  width: 80px;
+  height: 80px;
+}
+
+.planet1 {
+  width: 20px;
+  height: 20px;
+  --orbit-radius: 115px;
+  --orbit-duration: 4s;
+  animation: orbit var(--orbit-duration) linear infinite;
+}
+
+.orbit1,
+.orbit2,
+.orbit3,
+.orbit4,
+.orbit5,
+.orbit6,
+.orbit7,
+.orbit8 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border: 1px dashed rgb(236, 236, 236);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.orbit1 {
+  width: 230px;
+  height: 230px;
+}
+
+.planet2 {
+  width: 30px;
+  height: 30px;
+  --orbit-radius: 165px;
+  --orbit-duration: 8s;
+  animation: orbit var(--orbit-duration) linear infinite;
+}
+
+.orbit2 {
+  width: 330px;
+  height: 330px;
+}
+
+.planet3 {
+  width: 35px;
+  height: 35px;
+  --orbit-radius: 225px;
+  --orbit-duration: 12s;
+  animation: orbit var(--orbit-duration) linear infinite;
+}
+
+.orbit3 {
+  width: 450px;
+  height: 450px;
+}
+
+.planet4 {
+  width: 35px;
+  height: 35px;
+  --orbit-radius: 275px;
+  --orbit-duration: 16s;
+  animation: orbit var(--orbit-duration) linear infinite;
+}
+
+.orbit4 {
+  width: 545px;
+  height: 545px;
+}
+
+.planet5 {
+  width: 80px;
+  height: 80px;
+  --orbit-radius: 340px;
+  --orbit-duration: 30s;
+  animation: orbit var(--orbit-duration) linear infinite;
+}
+
+.orbit5 {
+  width: 675px;
+  height: 675px;
+}
+
+.planet6 {
+  width: 80px;
+  height: 80px;
+  --orbit-radius: 400px;
+  --orbit-duration: 40s;
+  animation: orbit var(--orbit-duration) linear infinite;
+}
+
+.orbit6 {
+  width: 800px;
+  height: 800px;
+}
+
+.planet7 {
+  width: 50px;
+  height: 50px;
+  --orbit-radius: 460px;
+  --orbit-duration: 80s;
+  animation: orbit var(--orbit-duration) linear infinite;
+}
+
+.orbit7 {
+  width: 920px;
+  height: 920px;
+}
+
+.planet8 {
+  width: 50px;
+  height: 50px;
+  --orbit-radius: 550px;
+  --orbit-duration: 120s;
+  animation: orbit var(--orbit-duration) linear infinite;
+}
+
+.orbit8 {
+  width: 1100px;
+  height: 1100px;
+}
+
+@keyframes orbit {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg) translateX(var(--orbit-radius)) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(-360deg) translateX(var(--orbit-radius)) rotate(360deg);
+  }
+}
